@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolan Banyumas - Wisata Banyumas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Tambahkan ini untuk scroll halus */
+        html {
+            scroll-behavior: smooth;
+        }
+        .section-title-container {
+            display: flex;
+            justify-content: space-between; /* Menyusun judul dan teks "Lihat Semua" secara horizontal */
+            align-items: center; /* Memastikan elemen berada pada tengah vertikal */
+        }
+        .view-all {
+            font-size: 0.9em; /* Ukuran font lebih kecil */
+            cursor: pointer; /* Menunjukkan bahwa ini bisa diklik */
+            color: blue; /* Warna teks, bisa diubah sesuai kebutuhan */
+            text-decoration: underline; /* Garis bawah untuk menunjukkan tautan */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="image/logo_dolan_bms2.png" alt="Dolan Banyumas">
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#sejarah">Sejarah Banyumas</a></li>
+                <li><a href="#bantuan">Bantuan</a></li>
+                <li><a href="#penginapan">Penginapan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Selalu Ada Cerita di Banyumas</h1>
+            <p class="hero-description">Dolan Banyumas adalah aplikasi yang memudahkan para traveler dalam menemukan guide untuk menikmati indahnya Banyumas dengan fasilitas lengkap dari objek wisata, desa wisata, penginapan, kuliner, dan oleh-oleh. Anda tidak perlu lagi pusing bila berkunjung ke Banyumas, cukup dengan Dolan Banyumas segala yang anda butuhkan selama di Banyumas akan terpenuhi, ayo plesir Banyumas!</p>
+    
+            <div class="menu-icons">
+                <a href="#wisata" class="menu-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Objek wisata</span>
+                </a>
+                <a href="#kuliner" class="menu-item">
+                    <i class="fas fa-utensils"></i>
+                    <span>Kuliner</span>
+                </a>
+                <a href="#penginapan" class="menu-item">
+                    <i class="fas fa-bed"></i>
+                    <span>Penginapan</span>
+                </a>
+                <a href="#oleh-oleh" class="menu-item">
+                    <i class="fas fa-gift"></i>
+                    <span>Oleh-oleh</span>
+                </a>
+                <a href="#desa-wisata" class="menu-item">
+                    <i class="fas fa-home"></i>
+                    <span>Desa Wisata</span>
+                </a>
+                <a href="#biro" class="menu-item">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Biro Perjalanan</span>
+                </a>
+                <a href="#event" class="menu-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Event</span>
+                </a>
+            </div>
+    
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-bar" placeholder="Cari apapun yang kamu mau">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Wisata Section -->
+    <section class="section" id="wisata">
+        <div class="container">
+            <div class="section-title-container"> <!-- Menggunakan flexbox untuk judul dan "Lihat Semua" -->
+                <h2 class="section-title">Objek Wisata Populer</h2>
+                <a href="objekwisata.html">Lihat Semua </a>
+                </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="http://anekatempatwisata.com/wp-content/uploads/2015/06/wisata-Baturaden.jpg" alt="Baturraden">
+                    <div class="card-content">
+                        <h3>Baturraden</h3>
+                        <p>Baturraden merupakan tempat wisata alam di Kabupaten Banyumas, Jawa Tengah. Daerah wisata ini terletak di lereng Gunung Slamet.</p>
+                        <a href="#" class="btn">Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.idntimes.com/content-images/community/2022/10/173727208-1081298075725244-1009806950086274206-n-d7a5cfe6be371380223a4ffc73ad4e08-8ec99332d4d8700e55abf85f4ac8baef.jpg" alt="Curug Cipendok">
+                    <div class="card-content">
+                        <h3>Curug Cipendok</h3>
+                        <p>Curug Cipendok adalah air terjun dengan ketinggian 92 meter yang terletak di lereng Gunung Slamet.</p>
+                        <a href="#" class="btn">Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.idntimes.com/content-images/community/2022/05/fromandroid-f363c0dd73d527282ae085a3ab7fe911.jpg" alt="Taman Mas Kemambang">
+                    <div class="card-content">
+                        <h3>Taman Mas Kemambang</h3>
+                        <p>Taman Mas Kemambang menjadi salah satu destinasi wisata yang menyajikan spot eye-catching dengan background Gunung Slamet.</p>
+                        <a href="#" class="btn">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kuliner Section -->
+    <section class="section" id="kuliner">
+        <div class="container">
+            <div class="section-title-container"> <!-- Menggunakan flexbox untuk judul dan "Lihat Semua" -->
+                <h2 class="section-title">Kuliner Khas</h2>
+                <span class="view-all" onclick="window.location.href='#';">Lihat Semua</span>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://lh5.googleusercontent.com/proxy/1pBpk1ifewSElC_vQ0mSX3Tn6nodCJUIOIAEcJJTa1Sk1RgLQG6PiV4rfqn8c-TM9RAlmtRWWLomr_FlJuUWlLb5DNerYhQ-lf9n24pj6gqf6gb6h4gsSDPxkprzg11r=w1200-h630-p-k-no-nu" alt="Mendoan">
+                    <div class="card-content">
+                        <h3>Mendoan</h3>
+                        <p>Tempe goreng khas Banyumas dengan tekstur yang lembut dan renyah.</p>
+                        <a href="#" class="btn">Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.finnafood.com/blog/wp-content/uploads/2023/08/soto-sokaraja.jpg" alt="Soto Sokaraja">
+                    <div class="card-content">
+                        <h3>Soto Sokaraja</h3>
+                        <p>Soto ayam khas dengan kuah bening dan bumbu rempah khas Banyumas.</p>
+                        <a href="#" class="btn">Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.genpi.co/uploads/jateng/arsip/normal/2023/01/18/di-banyumas-ada-camilan-khas-bernama-nopia-yang-terbuat-dari-yfcu.jpg" alt="Nopia">
+                    <div class="card-content">
+                        <h3>Nopia</h3>
+                        <p>Kue tradisional khas Banyumas dengan isian gula jawa.</p>
+                        <a href="#" class="btn">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Penginapan Section -->
+    <section class="section" id="penginapan">
+        <div class="container">
+            <div class="section-title-container"> <!-- Menggunakan flexbox untuk judul dan "Lihat Semua" -->
+                <h2 class="section-title">Penginapan Terbaik</h2>
+                <span class="view-all" onclick="window.location.href='#';">Lihat Semua</span>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlvfAyAcAtRlPFWn7y3qwW-gp4rcD1EWetHCBfsuR0C2v6FUoQXvsxoOclZYzeQvI3wdjw0O4HfPj0K-USz-y38sZOt2-5Un_qd77oKaG3rcdVZB4iS7yaFSGXM-86ozKD6gDkmrMowZaN3n9DYfXXUDeMg0UrbA4TkT7OoOoibS0xABM7heCGgDjF/w584-h414/9196e063436dd8cbae41ddaee30f93a7.jpg" alt="Aston Hotel">
+                    <div class="card-content">
+                        <h3>Aston Hotel</h3>
+                        <p>Aston Purwokerto merupakan salah satu hotel bintang 4 di Purwokerto, terletak di tengah kota Purwokerto antara Jalan Overste Isdiman dan Jalan Dr Suharso.</p>
+                        <a href="#" class="btn">Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://pix10.agoda.net/hotelImages/1273800/-1/2e751586008c12d442501295157b685c.jpg?s=1024x768" alt="Java Heritage">
+                    <div class="card-content">
+                        <h3>Java Heritage</h3>
+                        <p>Java Heritage adalah hotel yang terletak di Purwokerto, hotel ini menawarkan kenyamanan dan kemudahan bagi para tamu yang ingin menjelajahi keindahan Purwokerto.</p>
+                        <a href="#" class="btn">Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.getaroom-cdn.com/image/upload/s--3uwd5ozp--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1710146033/c95dfec72fa88d69a77ce4a05386042d4a0bc4db?atc=e7cd1cfa" alt="Niaga Campus Hotel">
+                    <div class="card-content">
+                        <h3>Niaga Campus Hotel</h3>
+                        <p>Terletak di Purwokerto, Hotel Wisata Niaga Campus menawarkan akomodasi dengan bar, WiFi gratis di seluruh area akomodasi, dan gratis jika Anda berkendara.</p>
+                        <a href="#" class="btn">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tentang Dolan Banyumas</h3>
+                    <p>Portal wisata resmi Kabupaten Banyumas yang menyajikan informasi lengkap tentang destinasi wisata, kuliner, dan budaya.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p>Email: info@dolanbanyumas.com</p>
+                    <p>Telp: (0281) 123456</p>
+                    <p>Alamat: Jl. Jenderal Sudirman No. 1, Purwokerto</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dolan Banyumas. Muhammad Asari.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
